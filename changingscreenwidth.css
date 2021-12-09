@@ -1,0 +1,93 @@
+#csw{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    transition: width ease-in-out .6s;
+    box-shadow: 0 0 20px rgba(15,15,15,.6);
+    z-index: 1;
+}
+/* #csw::after{ */
+#csw_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #2f2f2f;
+    z-index: -1;
+}
+.csw_button_block{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.csw_button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 100%;
+    background: rgba(30, 165, 243,.6);
+    padding:10px;
+    margin: 7.5px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    box-shadow: 0 0 10px rgba(30, 165, 243,.6);
+    opacity: .6;
+}
+.csw_button:hover,
+.csw_active{
+    box-shadow: 0 0 10px rgba(30, 165, 243,1);
+    opacity: .8;
+
+}
+.csw_button svg{
+    max-height: 26px;
+    max-width: 26px;
+    min-height: 26px;
+    min-width: 26px;
+    fill:#2f2f2f
+}
+
+.csw_button--width-screen{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 900;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+.csw_button:hover .csw_button--width-screen{
+    top: 110%;
+    opacity: 1;
+}
+
+
+/**/
+img{
+    width: 100%;
+    height: auto;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+}
